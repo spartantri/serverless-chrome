@@ -49,7 +49,7 @@ jobs:
       # Node 8 so we can avoid transpiling our tests
       - image: circleci/node:12
       # The unit tests require DevTools on localhost:9222
-      - image: adieuadieu/headless-chromium-for-aws-lambda:stable
+      - image: spartantri/headless-chromium-for-aws-lambda:stable
     steps:
       - checkout
       - restore_cache:
