@@ -1,7 +1,7 @@
 # Contributing to this project
 
-[fork]: https://github.com/adieuadieu/serverless-chrome/fork
-[pr]: https://github.com/adieuadieu/serverless-chrome/compare
+[fork]: https://github.com/spartantri/serverless-chrome/fork
+[pr]: https://github.com/spartantri/serverless-chrome/compare
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
 Hi there! We're thrilled that you'd like to contribute to this project. Your help is essential for keeping it great.

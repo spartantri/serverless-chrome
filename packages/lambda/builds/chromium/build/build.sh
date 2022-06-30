@@ -10,7 +10,7 @@
 #
 # Usage: ./build.sh
 #
-# Further documentation: https://github.com/adieuadieu/serverless-chrome/blob/develop/docs/chrome.md
+# Further documentation: https://github.com/spartantri/serverless-chrome/blob/develop/docs/chrome.md
 #
 
 set -e
@@ -63,7 +63,7 @@ cd src
 
 #
 # tweak to keep Chrome from crashing after 4-5 Lambda invocations
-# see https://github.com/adieuadieu/serverless-chrome/issues/41#issuecomment-340859918
+# see https://github.com/spartantri/serverless-chrome/issues/41#issuecomment-340859918
 # Thank you, Geert-Jan Brits (@gebrits)!
 #
 SANDBOX_IPC_SOURCE_PATH="content/browser/sandbox_ipc_linux.cc"

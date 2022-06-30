@@ -16,10 +16,10 @@ Why? Because it's neat. It also opens up interesting possibilities for using the
 [Puppeteer](https://github.com/GoogleChrome/puppeteer)) in serverless
 architectures and doing testing/CI, web-scraping, pre-rendering, etc.
 
-[![CircleCI](https://img.shields.io/circleci/project/github/adieuadieu/serverless-chrome/master.svg?style=flat-square)](https://circleci.com/gh/adieuadieu/serverless-chrome)
-[![David](https://img.shields.io/david/adieuadieu/serverless-chrome.svg?style=flat-square)]()
-[![David](https://img.shields.io/david/dev/adieuadieu/serverless-chrome.svg?style=flat-square)]()
-[![GitHub release](https://img.shields.io/github/release/adieuadieu/serverless-chrome.svg?style=flat-square)](https://github.com/adieuadieu/serverless-chrome)
+[![CircleCI](https://img.shields.io/circleci/project/github/spartantri/serverless-chrome/master.svg?style=flat-square)](https://circleci.com/gh/spartantri/serverless-chrome)
+[![David](https://img.shields.io/david/spartantri/serverless-chrome.svg?style=flat-square)]()
+[![David](https://img.shields.io/david/dev/spartantri/serverless-chrome.svg?style=flat-square)]()
+[![GitHub release](https://img.shields.io/github/release/spartantri/serverless-chrome.svg?style=flat-square)](https://github.com/spartantri/serverless-chrome)
 
 ## Contents
 
@@ -48,7 +48,7 @@ Using AWS Lambda, the quickest way to get started is with the
 First, install `serverless` globally (`npm install -g serverless`) and then:
 
 ```bash
-serverless create -u https://github.com/adieuadieu/serverless-chrome/tree/master/examples/serverless-framework/aws
+serverless create -u https://github.com/spartantri/serverless-chrome/tree/master/examples/serverless-framework/aws
 ```
 
 Then, you must configure your AWS credentials either by defining
@@ -119,8 +119,8 @@ A collection of example functions for different providers and frameworks.
 ### Building Headless Chrome/Chromium
 
 * Automated, regularly prebuilt binaries can be found on the
-  [Releases](https://github.com/adieuadieu/serverless-chrome/releases) page 😎
-* [adieuadieu/headless-chromium-for-aws-lambda](https://hub.docker.com/r/adieuadieu/headless-chromium-for-aws-lambda/)
+  [Releases](https://github.com/spartantri/serverless-chrome/releases) page 😎
+* [spartantri/headless-chromium-for-aws-lambda](https://hub.docker.com/r/spartantri/headless-chromium-for-aws-lambda/)
   Docker image
 * [Documentation on building your own binaries](/docs/chrome.md)
 * [Medium article on how to do build from scratch](https://medium.com/@marco.luethy/running-headless-chrome-on-aws-lambda-fa82ad33a9eb).
@@ -147,7 +147,7 @@ A collection of articles and tutorials written by others on using serverless-chr
 
 <details id="troubleshooting-1">
   <summary>Can't get Selenium / ChromeDriver to work</summary>
-  Make sure that the versions of serverless-chrome, chromedriver, and Selenium are compatible. More details in [#133](https://github.com/adieuadieu/serverless-chrome/issues/133#issuecomment-382743975).
+  Make sure that the versions of serverless-chrome, chromedriver, and Selenium are compatible. More details in [#133](https://github.com/spartantri/serverless-chrome/issues/133#issuecomment-382743975).
 </details>
 
 ## Roadmap
@@ -170,7 +170,7 @@ _Future_
 ## Projects & Companies using serverless-chrome
 
 Tell us about your project on the
-[Wiki](https://github.com/adieuadieu/serverless-chrome/wiki/Projects-&-Companies-Using-serverless-chrome)!
+[Wiki](https://github.com/spartantri/serverless-chrome/wiki/Projects-&-Companies-Using-serverless-chrome)!
 
 ## Change log
 
@@ -191,7 +191,7 @@ This project was inspired in various ways by the following projects:
 
 ## License
 
-**serverless-chrome** © [Marco Lüthy](https://github.com/adieuadieu). Released under the [MIT](./LICENSE) license.<br>
-Authored and maintained by Marco Lüthy with help from [contributors](https://github.com/adieuadieu/serverless-chrome/contributors).
+**serverless-chrome** © [Marco Lüthy](https://github.com/spartantri). Released under the [MIT](./LICENSE) license.<br>
+Authored and maintained by Marco Lüthy with help from [contributors](https://github.com/spartantri/serverless-chrome/contributors).
 
-> [github.com/adieuadieu](https://github.com/adieuadieu) · GitHub [@adieuadieu](https://github.com/adieuadieu) · Twitter [@adieuadieu](https://twitter.com/adieuadieu) · Medium [@marco.luethy](https://medium.com/@marco.luethy)
+> [github.com/spartantri](https://github.com/spartantri) · GitHub [@spartantri](https://github.com/spartantri) · Twitter [@spartantri](https://twitter.com/spartantri) · Medium [@marco.luethy](https://medium.com/@marco.luethy)

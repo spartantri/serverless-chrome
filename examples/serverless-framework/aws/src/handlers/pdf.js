@@ -1,7 +1,7 @@
 //
 //
 // HEY! Be sure to re-incorporate changes from @albinekb
-// https://github.com/adieuadieu/serverless-chrome/commit/fca8328134f1098adf92e115f69002e69df24238
+// https://github.com/spartantri/serverless-chrome/commit/fca8328134f1098adf92e115f69002e69df24238
 //
 //
 //
@@ -11,7 +11,7 @@ import pdf, { makePrintOptions } from '../chrome/pdf'
 export default async function handler (event, context, callback) {
   const queryStringParameters = event.queryStringParameters || {}
   const {
-    url = 'https://github.com/adieuadieu/serverless-chrome',
+    url = 'https://github.com/spartantri/serverless-chrome',
     ...printParameters
   } = queryStringParameters
   const printOptions = makePrintOptions(printParameters)

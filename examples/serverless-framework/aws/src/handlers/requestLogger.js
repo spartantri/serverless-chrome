@@ -6,7 +6,7 @@ const LOAD_TIMEOUT = 1000 * 30
 export default async function handler (event, context, callback) {
   const queryStringParameters = event.queryStringParameters || {}
   const {
-    url = 'https://github.com/adieuadieu/serverless-chrome',
+    url = 'https://github.com/spartantri/serverless-chrome',
   } = queryStringParameters
   const requestsMade = []
 

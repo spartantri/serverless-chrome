@@ -8,8 +8,8 @@
 #
 #
 # Further documentation: 
-# https://github.com/adieuadieu/serverless-chrome/blob/develop/docs/automation.md
-# https://github.com/adieuadieu/serverless-chrome/blob/develop/docs/chrome.md
+# https://github.com/spartantri/serverless-chrome/blob/develop/docs/automation.md
+# https://github.com/spartantri/serverless-chrome/blob/develop/docs/chrome.md
 #
 
 set -e
@@ -22,7 +22,7 @@ PROJECT_DIRECTORY=$(pwd)
 BUILD_NAME=${1:-chromium}
 CHANNEL=${2:-stable}
 VERSION=${3:-master}
-DOCKER_ORG=${DOCKER_ORG:-adieuadieu}
+DOCKER_ORG=${DOCKER_ORG:-spartantri}
 S3_BUCKET=${S3_BUCKET:-}
 FORCE_NEW_BUILD=${FORCE_NEW_BUILD:-}
 

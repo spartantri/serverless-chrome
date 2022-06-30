@@ -32,7 +32,7 @@ packageBinary() {
     mkdir -p "$BUILD_PATH"
 
     # Extract binary from docker image
-    docker run -dt --rm --name "$DOCKER_IMAGE" "adieuadieu/$DOCKER_IMAGE:$VERSION"
+    docker run -dt --rm --name "$DOCKER_IMAGE" "spartantri/$DOCKER_IMAGE:$VERSION"
     docker cp "$DOCKER_IMAGE":/bin/headless-"$BUILD_NAME" "$BUILD_PATH"
     docker stop "$DOCKER_IMAGE"
 

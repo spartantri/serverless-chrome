@@ -27,7 +27,7 @@ if ! npm whoami -s && [ -z "$NPM_TOKEN" ]; then
   exit 1
 fi
 
-GITHUB_ORG=adieuadieu
+GITHUB_ORG=spartantri
 GITHUB_REPO=serverless-chrome
 export GITHUB_ORG
 export GITHUB_REPO

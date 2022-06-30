@@ -17,7 +17,7 @@ CHANNEL=${1:-stable}
 BROWSER=${2:-}
 VERSION=${3:-}
 
-DOCKER_ORG=${DOCKER_ORG:-adieuadieu}
+DOCKER_ORG=${DOCKER_ORG:-spartantri}
 
 PROJECT_DIRECTORY=$(pwd)
 PACKAGE_DIRECTORY="$PROJECT_DIRECTORY/packages/lambda"

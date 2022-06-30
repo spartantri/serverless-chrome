@@ -36,11 +36,11 @@ build() {
     DOCKER_IMAGE=$BUILD_NAME-for-amazonlinux-base
   fi
 
-  if docker_tag_exists "adieuadieu/$DOCKER_IMAGE" "$LATEST_VERSION"; then
+  if docker_tag_exists "spartantri/$DOCKER_IMAGE" "$LATEST_VERSION"; then
     echo "Pulling $BUILD_NAME version $LATEST_VERSION."
-    docker pull "adieuadieu/$DOCKER_IMAGE:$LATEST_VERSION"
+    docker pull "spartantri/$DOCKER_IMAGE:$LATEST_VERSION"
   else
-    echo "Docker image adieuadieu/$DOCKER_IMAGE:$LATEST_VERSION doesn't exist."
+    echo "Docker image spartantri/$DOCKER_IMAGE:$LATEST_VERSION doesn't exist."
     exit 1
   fi
 }

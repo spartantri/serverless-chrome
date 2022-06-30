@@ -1,7 +1,7 @@
 import test from 'ava'
 import pdf from './pdf'
 
-const testUrl = 'https://github.com/adieuadieu'
+const testUrl = 'https://github.com/spartantri'
 
 test('printUrlToPdf() should return base64 encoded application/pdf', async (t) => {
   await t.notThrows(async () => {

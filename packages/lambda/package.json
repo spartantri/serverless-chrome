@@ -19,11 +19,11 @@
     "scripts/postinstall.js"
   ],
   "types": "index.d.ts",
-  "repository": "git@github.com:adieuadieu/serverless-chrome.git",
+  "repository": "git@github.com:spartantri/serverless-chrome.git",
   "bugs": {
-    "url": "https://github.com/adieuadieu/serverless-chrome/issues"
+    "url": "https://github.com/spartantri/serverless-chrome/issues"
   },
-  "homepage": "https://github.com/adieuadieu/serverless-chrome/tree/master/packages/lambda",
+  "homepage": "https://github.com/spartantri/serverless-chrome/tree/master/packages/lambda",
   "license": "MIT",
   "engines": {
     "node": ">= 6.10"

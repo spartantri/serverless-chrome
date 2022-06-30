@@ -70,7 +70,7 @@ if [ -n "$CHANNEL" ] && [ -n "$BROWSER" ]; then
   export S3_BUCKET
   export FORCE_NEW_BUILD
   
-  git clone "https://github.com/adieuadieu/serverless-chrome.git"
+  git clone "https://github.com/spartantri/serverless-chrome.git"
 
   cd serverless-chrome || return
 

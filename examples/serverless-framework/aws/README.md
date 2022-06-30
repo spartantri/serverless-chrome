@@ -28,7 +28,7 @@ Then pull down the example service:
 
 ```bash
 serverless create -u \
-  https://github.com/adieuadieu/serverless-chrome/tree/master/examples/serverless-framework/aws
+  https://github.com/spartantri/serverless-chrome/tree/master/examples/serverless-framework/aws
 ```
 
 And install the dependencies:
@@ -70,7 +70,7 @@ This example service includes the following functions, each demonstrating a comm
 
 
 ### Capture Screenshot of a given URL
- When you the serverless function, it creates a Lambda function which will take a screenshot of a URL it's provided. You can provide this URL to the Lambda function via the AWS API Gateway. After a successful deploy, an API endpoint will be provided. Use this URL to call the Lambda function with a url in the query string. E.g. `https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/screenshot?url=https://github.com/adieuadieu/serverless-chrome`. Add `&mobile=1` for mobile device view.
+ When you the serverless function, it creates a Lambda function which will take a screenshot of a URL it's provided. You can provide this URL to the Lambda function via the AWS API Gateway. After a successful deploy, an API endpoint will be provided. Use this URL to call the Lambda function with a url in the query string. E.g. `https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/screenshot?url=https://github.com/spartantri/serverless-chrome`. Add `&mobile=1` for mobile device view.
 
 #### Deploying
 
@@ -81,9 +81,9 @@ serverless deploy -f screenshot
 ```
 
 ### Print a given URL to PDF
-The printToPdf handler will create a PDF from a URL it's provided. You can provide this URL to the Lambda function via the AWS API Gateway. After a successful deploy, an API endpoint will be provided. Use this URL to call the Lambda function with a url in the query string. E.g. `https://XXXXXXX.execute-api.us-weeast-2.amazonaws.com/dev/pdf?url=https://github.com/adieuadieu/serverless-chrome`
+The printToPdf handler will create a PDF from a URL it's provided. You can provide this URL to the Lambda function via the AWS API Gateway. After a successful deploy, an API endpoint will be provided. Use this URL to call the Lambda function with a url in the query string. E.g. `https://XXXXXXX.execute-api.us-weeast-2.amazonaws.com/dev/pdf?url=https://github.com/spartantri/serverless-chrome`
 
-This handler also supports configuring the "paper" size, orientation, etc. You can pass any of the DevTools Protocol's [`Page.printToPdf()`](https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-printToPDF]) method's parameters. For example, for landscape oriented PDF add `&landscape=true` to the end of the URL. Be sure to remember to escape the value of `url` if it contains query parameters. E.g. `https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/pdf?url=https://github.com/adieuadieu/serverless-chrome&landscape=true`
+This handler also supports configuring the "paper" size, orientation, etc. You can pass any of the DevTools Protocol's [`Page.printToPdf()`](https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-printToPDF]) method's parameters. For example, for landscape oriented PDF add `&landscape=true` to the end of the URL. Be sure to remember to escape the value of `url` if it contains query parameters. E.g. `https://XXXXXXX.execute-api.us-east-1.amazonaws.com/dev/pdf?url=https://github.com/spartantri/serverless-chrome&landscape=true`
 
 #### Deploying
 
@@ -148,5 +148,5 @@ export AWS_CLIENT_TIMEOUT=3000000
 <details id="ts-argh">
   <summary>Aaaaaarggghhhhhh!!!</summary>
 
-  Uuurrrggghhhhhh! Have you tried [filing an Issue](https://github.com/adieuadieu/serverless-chrome/issues/new)?
+  Uuurrrggghhhhhh! Have you tried [filing an Issue](https://github.com/spartantri/serverless-chrome/issues/new)?
 </details>

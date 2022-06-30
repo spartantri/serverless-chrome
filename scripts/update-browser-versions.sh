@@ -50,7 +50,7 @@ for BUILD in */Dockerfile; do
     LATEST_VERSION=$(./latest.sh "$CHANNEL")
 
     if [ "$CURRENT_VERSION" != "$LATEST_VERSION" ]; then
-      if "$PROJECT_DIRECTORY/scripts/docker-image-exists.sh" "adieuadieu/$DOCKER_IMAGE" "$LATEST_VERSION"; then
+      if "$PROJECT_DIRECTORY/scripts/docker-image-exists.sh" "spartantri/$DOCKER_IMAGE" "$LATEST_VERSION"; then
         echo "$BUILD_NAME has new version $LATEST_VERSION. Updating configuration ..."
         
         JSON=$(jq -r ".$CHANNEL |= \"$LATEST_VERSION\"" version.json)
@@ -64,7 +64,7 @@ for BUILD in */Dockerfile; do
           UPDATES=1
         fi
       else
-        echo "Docker image for adieuadieu/$DOCKER_IMAGE:$LATEST_VERSION does not exist. Exiting." && exit 1
+        echo "Docker image for spartantri/$DOCKER_IMAGE:$LATEST_VERSION does not exist. Exiting." && exit 1
       fi
     else
       echo "$BUILD_NAME $CHANNEL version $CURRENT_VERSION is already latest. Nothing to update."

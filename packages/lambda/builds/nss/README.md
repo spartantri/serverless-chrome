@@ -3,7 +3,7 @@
 NSS is a library required by chrome to run. Unfortunately the version provided
 by the AWS lambda image is too old, so it's necessary to build it.
 
-*Note:* This work was originally done by @qubyte in [PR#56](https://github.com/adieuadieu/serverless-chrome/pull/56/files). It's currently not necessary to include a special version of NSS but may become necessary again in the future—for that reason this is left here.
+*Note:* This work was originally done by @qubyte in [PR#56](https://github.com/spartantri/serverless-chrome/pull/56/files). It's currently not necessary to include a special version of NSS but may become necessary again in the future—for that reason this is left here.
 
 ## Building
 

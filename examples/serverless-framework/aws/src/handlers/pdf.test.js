@@ -1,7 +1,7 @@
 import test from 'ava'
 import handler from '../handlers/pdf'
 
-const testUrl = 'https://github.com/adieuadieu'
+const testUrl = 'https://github.com/spartantri'
 const testEvent = {
   queryStringParameters: { url: testUrl },
 }

@@ -4,7 +4,7 @@ import screenshot from '../chrome/screenshot'
 export default async function handler (event, context, callback) {
   const queryStringParameters = event.queryStringParameters || {}
   const {
-    url = 'https://github.com/adieuadieu/serverless-chrome',
+    url = 'https://github.com/spartantri/serverless-chrome',
     mobile = false,
   } = queryStringParameters
 

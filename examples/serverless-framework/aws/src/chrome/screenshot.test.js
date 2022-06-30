@@ -1,7 +1,7 @@
 import test from 'ava'
 import screenshot from './screenshot'
 
-const testUrl = 'https://github.com/adieuadieu'
+const testUrl = 'https://github.com/spartantri'
 
 test('screenshot() should return base64 encoded image/png', async (t) => {
   await t.notThrows(async () => {

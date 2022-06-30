@@ -1,7 +1,7 @@
 //
 //
 // HEY! Be sure to re-incorporate changes from @albinekb
-// https://github.com/adieuadieu/serverless-chrome/commit/fca8328134f1098adf92e115f69002e69df24238
+// https://github.com/spartantri/serverless-chrome/commit/fca8328134f1098adf92e115f69002e69df24238
 //
 //
 //

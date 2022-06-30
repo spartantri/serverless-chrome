@@ -165,5 +165,5 @@ export AWS_CLIENT_TIMEOUT=3000000
 <details id="ts-argh">
   <summary>Aaaaaarggghhhhhh!!!</summary>
 
-  Uuurrrggghhhhhh! Have you tried [filing an Issue](https://github.com/adieuadieu/serverless-chrome/issues/new)?
+  Uuurrrggghhhhhh! Have you tried [filing an Issue](https://github.com/spartantri/serverless-chrome/issues/new)?
 </details>

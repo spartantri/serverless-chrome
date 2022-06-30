@@ -34,7 +34,7 @@ launch_if_new() {
   LATEST_VERSION=$(./latest.sh "$CHANNEL")
   DOCKER_IMAGE=headless-$BUILD_NAME-for-aws-lambda
 
-  if "$PROJECT_DIRECTORY/scripts/docker-image-exists.sh" "adieuadieu/$DOCKER_IMAGE" "$LATEST_VERSION"; then
+  if "$PROJECT_DIRECTORY/scripts/docker-image-exists.sh" "spartantri/$DOCKER_IMAGE" "$LATEST_VERSION"; then
     echo "$BUILD_NAME version $LATEST_VERSION was previously built. Skipping build."
   else
     "$PROJECT_DIRECTORY/scripts/ec2-build.sh" "$BUILD_NAME" "$CHANNEL" "$LATEST_VERSION"

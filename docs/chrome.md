@@ -12,7 +12,7 @@
 
 ## Prebuilt Binaries
 
-Prebuilt binaries are regularly released and made available under [Releases](https://github.com/adieuadieu/serverless-chrome/releases). These binaries have been checked to work within the Lambda Execution Environment. New binaries are released whenever there's a new [stable-channel version](https://omahaproxy.appspot.com/) for Linux (about once every 1-2 weeks).
+Prebuilt binaries are regularly released and made available under [Releases](https://github.com/spartantri/serverless-chrome/releases). These binaries have been checked to work within the Lambda Execution Environment. New binaries are released whenever there's a new [stable-channel version](https://omahaproxy.appspot.com/) for Linux (about once every 1-2 weeks).
 
 Check this project's released binaries against the latest with:
 
@@ -23,9 +23,9 @@ Check this project's released binaries against the latest with:
 
 ## Docker Image
 
-The prebuild binaries made available under [Releases](https://github.com/adieuadieu/serverless-chrome/releases) are extracted from the public [adieuadieu/headless-chromium-for-aws-lambda](https://hub.docker.com/r/adieuadieu/headless-chromium-for-aws-lambda/) Docker image. This image is updated daily when there's a new Chromium version on any channel (stable, beta, dev).
+The prebuild binaries made available under [Releases](https://github.com/spartantri/serverless-chrome/releases) are extracted from the public [spartantri/headless-chromium-for-aws-lambda](https://hub.docker.com/r/spartantri/headless-chromium-for-aws-lambda/) Docker image. This image is updated daily when there's a new Chromium version on any channel (stable, beta, dev).
 
-The image uses [lambci/lambda](https://hub.docker.com/r/lambci/lambda/) as a base which very closely mimics the live AWS Lambda Environment. We use the [adieuadieu/headless-chromium-for-aws-lambda](https://hub.docker.com/r/adieuadieu/headless-chromium-for-aws-lambda/) image for unit and integration tests.
+The image uses [lambci/lambda](https://hub.docker.com/r/lambci/lambda/) as a base which very closely mimics the live AWS Lambda Environment. We use the [spartantri/headless-chromium-for-aws-lambda](https://hub.docker.com/r/spartantri/headless-chromium-for-aws-lambda/) image for unit and integration tests.
 
 Run it yourself with:
 
@@ -33,7 +33,7 @@ Run it yourself with:
 docker run -d --rm \
   --name headless-chromium \
   -p 9222:9222 \
-  adieuadieu/headless-chromium-for-aws-lambda
+  spartantri/headless-chromium-for-aws-lambda
 ```
 
 Headless Chromium is now running and accessible:
@@ -45,7 +45,7 @@ GET http://localhost:9222/
 Extract the headless Chrome binary from the container with:
 
 ```bash
-docker run -dt --rm --name headless-chromium adieuadieu/headless-chromium-for-aws-lambda:stable
+docker run -dt --rm --name headless-chromium spartantri/headless-chromium-for-aws-lambda:stable
 docker cp headless-chromium:/bin/headless-chromium ./
 docker stop headless-chromium
 ```
@@ -133,4 +133,4 @@ EC2 Spot Instance specifications such as instance type or spot price can be conf
 ## Known Issues / Limitations
 
 1. Hack to Chrome code to disable `/dev/shm`. Details [here](https://medium.com/@marco.luethy/running-headless-chrome-on-aws-lambda-fa82ad33a9eb).
-1. [Hack](https://github.com/adieuadieu/serverless-chrome/issues/41#issuecomment-341712878) to disable Sandbox IPC Polling.
+1. [Hack](https://github.com/spartantri/serverless-chrome/issues/41#issuecomment-341712878) to disable Sandbox IPC Polling.
